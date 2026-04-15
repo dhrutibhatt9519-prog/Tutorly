@@ -70,7 +70,7 @@ Tutorly solves this by offering:
 
 ### 🔎 Tutor Listing
 
-![Tutors](./assets/Tutor_List.png)
+![Tutors](./assets/Tutor_list.png)
 
 ### 📍 Become A Tutor
 
