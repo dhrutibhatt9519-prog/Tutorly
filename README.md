@@ -43,6 +43,13 @@ Tutorly solves this by offering:
 
 ---
 
+## Low-Fidelity Wireframe
+
+* Desktop View : https://www.figma.com/proto/gKT7BETpbj8ruwviSV6gIE/Tutorly-Design-System?node-id=1-7&t=1o2ZIOWDh0PNBIwr-1
+* Mobile View : https://www.figma.com/proto/gKT7BETpbj8ruwviSV6gIE/Tutorly-Design-System?node-id=1-82&t=1o2ZIOWDh0PNBIwr-1
+
+---
+
 ## ✨ Features
 
 * 🔍 **Real-time Search & Filtering**
