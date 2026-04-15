@@ -56,10 +56,125 @@ Tutorly solves this by offering:
 * 📍 **Interactive Map with Tutor Pins (Leaflet.js)**
 * ❤️ **Favorites System (LocalStorage)**
 * 📄 **Tutor Detail Pages**
-* 📡 **API Integration (Quote of the Day)**
 * 📱 **Fully Responsive Design**
 * ♿ **Accessibility Support (ARIA, semantic HTML)**
 * 🎨 **Custom SVG Icons & Branding**
 * ⚡ **Smooth Animations & Transitions**
 
 ---
+## 🖼️ Screenshots
+
+### 🏠 Homepage
+
+![Homepage](./assets/Homepage.png)
+
+### 🔎 Tutor Listing
+
+![Tutors](./assets/Tutor_List.png)
+
+### 📍 Become A Tutor
+
+![Map](./assets/Become_tutor.png)
+
+### 📄 Tutor Details
+
+![Details](./assets/Tutor_details.png)
+
+### 📄 Favourites
+
+![Details](./assets/Favourites.png)
+
+---
+
+## 🧩 Tech Stack
+
+* **HTML5** – Semantic structure
+* **CSS3** – Responsive layout & design system
+* **JavaScript (Vanilla)** – Logic & interactivity
+* **Leaflet.js** – Interactive maps
+* **LocalStorage** – Favorites persistence
+
+---
+
+## 🏗️ Project Structure
+
+```
+tutorly/
+│
+├── index.html
+├── tutors.html
+├── tutor-details.html
+├── favourites.html
+├── become-tutor.html
+│
+├── css/
+│   └── style.css
+│   └── responsive.css
+│
+├── js/
+│   ├── main.js
+│
+├── data/
+│   └── tutors.json
+│
+├── assets/
+│   └── images & screenshot
+│
+└── README.md
+```
+
+---
+
+
+## 🎯 Key Learnings
+
+* DOM manipulation and event handling
+* Geolocation and distance calculations
+* Interactive UI with map integration
+* Building scalable multi-page applications
+
+---
+
+## 📐 Design System
+
+### 🎨 Colors
+
+* Primary: #0c6664
+* Secondary: #dfb930
+* Text: #29463f
+* Heading: #18342e
+
+### 🔤 Typography
+
+* Headings: Cormorant Garamond
+* Body: Manrope
+
+---
+
+## 🔮 Future Improvements
+
+* User authentication
+* Booking system backend
+* Tutor reviews & ratings
+* Chat functionality
+* Dark mode
+
+---
+
+## 🙌 Acknowledgements
+
+* Leaflet.js for maps
+* Open-source community
+
+---
+
+## 💼 Author
+
+**Dhruti Bhatt**
+Frontend Developer
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
