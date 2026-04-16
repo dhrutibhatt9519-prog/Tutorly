@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupNavigation();
   setupRevealAnimations();
   setupStaticForms();
+  loadTrivia();
 
   try {
     state.tutors = await loadTutors();
@@ -718,7 +719,54 @@ function escapeAttribute(value) {
   return escapeHtml(value);
 }
 
+/**
+ * EXTERNAL API INTEGRATION (Trivia)
+ * --------------------------------------------------
+ * Fetches a random trivia question from API Ninjas and displays it on the homepage.
+ * Uses the same escape functions to ensure any content is safe
+ * and adds a toggle button to show/hide the answer.
+ */
+async function loadTrivia() {
+  const questionEl = document.getElementById("trivia-question");
+  const answerEl = document.getElementById("trivia-answer");
+  const button = document.getElementById("show-answer-btn");
 
+  if (!questionEl || !answerEl || !button) return;
 
+  try {
+    const response = await fetch("https://api.api-ninjas.com/v1/trivia", {
+      method: "GET",
+      headers: {
+        "X-Api-Key": "ANxjyRqlHf4G0Xy2Pvw2yf2D4TwoyEasV9xr6ThU"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch trivia");
+    }
+
+    const data = await response.json();
+
+    // API returns an array
+    const trivia = data[0];
+
+    questionEl.textContent = trivia.question;
+    answerEl.textContent = trivia.answer;
+
+    // Hide answer initially
+    answerEl.classList.add("hide-answer");
+
+    button.addEventListener("click", () => {
+      answerEl.classList.toggle("hide-answer");
+      button.textContent = answerEl.classList.contains("hide-answer")
+        ? "Show Answer"
+        : "Hide Answer";
+    });
+
+  } catch (error) {
+    console.error(error);
+    questionEl.textContent = "Couldn't load trivia right now.";
+  }
+}
 
 
