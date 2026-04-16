@@ -1,5 +1,8 @@
 # 🎓 Tutorly
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://dhrutibhatt9519-prog.github.io/Tutorly/index.html)
+
+
 ## 📌 Project Overview
 
 **Tutorly** is a modern tutor discovery web application that helps students and parents find, filter, and connect with tutors based on subject, location, and availability.
@@ -200,7 +203,7 @@ This challenge reinforced the importance of aligning data models with UI require
 ---
 
 ## 📄 License
-This project is licensed under the MIT License.
+> This project is open-source under the MIT License and is intended for learning and portfolio purposes.
 
 ---
 
