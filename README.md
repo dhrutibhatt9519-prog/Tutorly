@@ -199,6 +199,11 @@ This challenge reinforced the importance of aligning data models with UI require
 
 ---
 
+## 📄 License
+This project is licensed under the MIT License.
+
+---
+
 ## 💼 Author
 
 **Dhruti Bhatt**
