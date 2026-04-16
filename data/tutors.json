@@ -2,7 +2,7 @@
   {
     "id": 1,
     "slug": "sarah-chen",
-    "name": "Dr. Sarah Chen",
+    "name": "Sarah Chen",
     "subject": ["Mathematics", "Physics"],
     "rating": 4.9,
     "reviews": 127,
@@ -108,7 +108,7 @@
   {
     "id": 5,
     "slug": "angela-martinez",
-    "name": "Prof. Angela Martinez",
+    "name": "Angela Martinez",
     "subject": ["History", "Social Studies"],
     "rating": 4.8,
     "reviews": 201,
