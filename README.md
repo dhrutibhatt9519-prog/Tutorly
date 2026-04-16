@@ -60,6 +60,7 @@ Tutorly solves this by offering:
 * ♿ **Accessibility Support (ARIA, semantic HTML)**
 * 🎨 **Custom SVG Icons & Branding**
 * ⚡ **Smooth Animations & Transitions**
+* 🌐 **Trivia of the Day Widget** - Live Data Integration
 
 ---
 ## 🖼️ Screenshots
@@ -93,6 +94,7 @@ Tutorly solves this by offering:
 * **JavaScript (Vanilla)** – Logic & interactivity
 * **Leaflet.js** – Interactive maps
 * **LocalStorage** – Favorites persistence
+* **APIs & External Services** - API Ninjas Trivia API (Real-time trivia widget), Carto (Map tile provider for Leaflet) 
 
 ---
 
@@ -148,6 +150,35 @@ tutorly/
 
 * Headings: Cormorant Garamond
 * Body: Manrope
+
+---
+
+### 🚧 Challenge: Scalable Geolocation & Custom Map Rendering
+
+A key technical challenge in Tutorly was implementing a scalable and reliable geolocation system for rendering tutor locations on an interactive map powered by Leaflet.
+
+The initial dataset only included human-readable location values (e.g., city or area names) without precise latitude and longitude coordinates. Since map rendering depends on exact coordinates, this created a gap between the data layer and the UI, leading to inconsistent or missing markers.
+
+#### Solution
+
+To address this, I:
+
+- Restructured the data model to include explicit `lat` and `lng` fields for each tutor
+- Built a dedicated `renderMap()` function to handle marker lifecycle (creation, clearing, and updates)
+- Implemented custom map markers using `divIcon` for consistent UI styling
+- Used `fitBounds()` to dynamically adjust the viewport based on filtered tutors
+- Handled edge cases by resetting the map view when no tutors match filters
+
+#### Outcome
+
+- Improved map rendering reliability and consistency  
+- Reduced manual errors in location handling  
+- Achieved clean separation between data, state management, and UI  
+- Established a scalable foundation for future enhancements (e.g., geocoding APIs)
+
+#### Key Takeaway
+
+This challenge reinforced the importance of aligning data models with UI requirements and designing systems that can scale from static datasets to dynamic, API-driven architectures.
 
 ---
 
