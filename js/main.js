@@ -118,7 +118,6 @@ function setupDirectory() {
   const query = new URLSearchParams(window.location.search).get("q");
   if (query) {
     const searchInput = document.getElementById("directory-search");
-    const heroSearch = document.getElementById("hero-search");
     state.filters.search = query.trim().toLowerCase();
     if (searchInput) searchInput.value = query;
     if (heroSearch) heroSearch.value = query;
@@ -178,7 +177,6 @@ function populateSelect(selectId, values, placeholder) {
 
 function bindFilterEvents() {
   const searchInput = document.getElementById("directory-search");
-  const heroSearch = document.getElementById("hero-search");
   const priceRange = document.getElementById("price-range");
   const resetButton = document.getElementById("reset-filters");
   const mobileSubject = document.getElementById("mobile-subject");
@@ -189,13 +187,6 @@ function bindFilterEvents() {
     const value = event.target.value.trim();
     state.filters.search = value.toLowerCase();
     if (heroSearch && heroSearch.value !== value) heroSearch.value = value;
-    applyFilters();
-  });
-
-  heroSearch?.addEventListener("input", (event) => {
-    const value = event.target.value.trim();
-    state.filters.search = value.toLowerCase();
-    if (searchInput && searchInput.value !== value) searchInput.value = value;
     applyFilters();
   });
 
