@@ -120,7 +120,6 @@ function setupDirectory() {
     const searchInput = document.getElementById("directory-search");
     state.filters.search = query.trim().toLowerCase();
     if (searchInput) searchInput.value = query;
-    if (heroSearch) heroSearch.value = query;
   }
 
   applyFilters();
@@ -186,7 +185,6 @@ function bindFilterEvents() {
   searchInput?.addEventListener("input", (event) => {
     const value = event.target.value.trim();
     state.filters.search = value.toLowerCase();
-    if (heroSearch && heroSearch.value !== value) heroSearch.value = value;
     applyFilters();
   });
 
@@ -595,7 +593,6 @@ function resetFilters() {
   const mobileAvailability = document.getElementById("mobile-availability");
 
   if (searchInput) searchInput.value = "";
-  if (heroSearch) heroSearch.value = "";
   if (priceRange) priceRange.value = "150";
   if (mobileSubject) mobileSubject.value = "";
   if (mobileLocation) mobileLocation.value = "";
